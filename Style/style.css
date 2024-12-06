@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0 10% 0 10%;
+    font-family: "Roboto", sans-serif;
+    background-color: #3E4451;
+    color: var(--color-pink_white);
+}
+:root {
+    --color-pink_white: #FED4CE;
+    --color-pink_black: #B38885;
+        --color-pink_black2: #AA9597;
+}
+
+
+
+.nav_hr {  
+    background-color: var(--color-pink_black2);
+    opacity: 1;
+    height: 2px;
+    border: none;
+    color: var(--color-pink_white);
+}
