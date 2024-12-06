@@ -11,6 +11,7 @@ html, body {
     --color-pink_white: #FED4CE;
     --color-pink_black: #B38885;
         --color-pink_black2: #AA9597;
+    --color-pink_black-hover: #80615F;
 }
 
 
@@ -21,4 +22,16 @@ html, body {
     height: 2px;
     border: none;
     color: var(--color-pink_white);
+}
+.nav_btn_text p:hover {
+    border-bottom: 1px solid var(--color-pink_white);
+}
+.nav_btn {
+    background-color: var(--color-pink_black);
+    padding: 1%;
+    border-radius: 15px;
+    transition: 1s;
+}
+.nav_btn:hover {
+    background-color: var(--color-pink_black-hover);
 }
