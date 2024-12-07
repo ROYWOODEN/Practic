@@ -31,6 +31,10 @@ html, body {
     font-family: "Inter-Medium";
     src: url("../Fonts/Inter/Inter-Medium.otf");
 }
+@font-face {
+    font-family: "Inter-Thin";
+    src: url(../Fonts/Inter/Inter-Thin.otf);
+}
 
     /* Задаем шрифты чтобы потом по отдельности не писать */
 .font_bold {
@@ -38,6 +42,15 @@ html, body {
 }
 .font_black {
     font-family: "Inter-Black";
+}
+.font_medium {
+    font-family: "Inter-Medium";
+}
+.font_regular {
+    font-family: "Inter-Regular";
+}
+.font_thin {
+    font-family: "Inter-Thin";
 }
 
 
@@ -109,6 +122,7 @@ html, body {
     bottom: 5%;
     right: 13%;
     position: fixed;
+    z-index: 100;
 }
 
 
