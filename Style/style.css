@@ -9,6 +9,7 @@ html, body {
 }
 :root {
     --color-pink_white: #FED4CE;
+    --color-pink_white_opacity: rgba(169, 151, 150, 0.76);
     --color-pink_black: #B38885;
         --color-pink_black2: #AA9597;
     --color-pink_black-hover: #80615F;
@@ -151,3 +152,15 @@ html, body {
     justify-content: center;
     width: 100%;
   }
+
+
+
+
+.carousel-caption {
+    background-color: var(--color-pink_white_opacity);
+    border-radius: 15px;
+    padding: 2%;
+}
+.studio_carousel_width {
+    width:80%;
+}
