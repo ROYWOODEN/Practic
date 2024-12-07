@@ -17,6 +17,7 @@
     <!-- Мои стили  -->
 
         <link rel="stylesheet" href="Style/style.css">
+        <link rel="stylesheet" href="Style/md.css">
 
         <!-- Иконка для сайта  -->
         <link rel="icon" href="src/SVG/icon.svg">
@@ -67,7 +68,7 @@
         <br>
     </header>
 
-    <section class="form_fon ">
+    <section class="form_fon md:block flex flex-col items-center">
         
         <br><br><br><br>
         <div class="form_border">
@@ -75,7 +76,7 @@
             <div id="order" class="text-center mb-5 font_black text-white text-xl">
                 Заполните форму
             </div>
-            <form action="" class="flex flex-col items-center font_black text-xl">
+            <form action="" class="flex flex-col items-center font_black md:text-xl text-lg">
                 <input type="text" placeholder="Введите ФИО">
                 <input type="text" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
                 <input type="email" placeholder="E-mail">
@@ -94,11 +95,13 @@
                   <button class="form_btn mt-8">Отправить</button>
             </form>
         </div>
+        <br><br>
     </section>
 
     <div class="strela_img">
-        <a href="#"><img src="src/SVG/strela.svg" alt=""></a>
+        <a href="#"><img src="src/SVG/strela.svg" alt="" draggable="false"></a>
     </div>
+
     <br><br>
 
     <section>
@@ -143,7 +146,7 @@
 
     <section>
          
-        <h1 id="services" class="text-center text-4xl font_black">
+        <h1 id="services" class="text-center md:text-4xl text-xl font_black">
             Наши услуги
         </h1>
         <br><br><br>
@@ -209,7 +212,7 @@
     <br><br><br>
 
     <section class="flex flex-col items-center">
-        <h1 id="studio" class="text-center text-4xl font_black">
+        <h1 id="studio" class="text-center md:text-4xl text-xl font_black">
             Интерьерные студии
         </h1>
         <br><br><br>
@@ -264,38 +267,42 @@
 
         <br><br>
 
-        <h1 class="text-center text-4xl font_black">
+        <h1 class="text-center md:text-4xl text-xl font_black">
             Контакты
         </h1>
 
         <br><br><br>
 
-        <div class="font_bold text-xl mb-2">
+        <div class="font_bold text-sm md:text-xl mb-2">
             studiokiss@mail.ru
         </div>
 
-        <div class="font_semibold text-xl mb-14">
+        <div class="font_semibold text-sm md:text-xl mb-14">
             +7 (423) 275-8-572
         </div>
 
-        <div class="font_medium text-xl mb-6">
+        <div class="font_medium text-sm md:text-xl mb-6">
             г.Владивосток, ул. Калинина 205, ТЦ "Зеленый Остров" 2-ой корпус, 3 этаж
         </div>
-        <div class="font_bold text-xl">
+        <div class="font_bold text-sm md:text-xl">
             Ежедневно: 9:00 - 19:00
         </div>
 
-        <div class="flex flex-row justify-around items-center w-25 mt-12">
-            <img src="src/SVG/icon-vk.svg" alt="">
-            <img src="src/SVG/icon-tg.svg" alt="">
-            <img src="src/SVG/icon-inst.svg" alt="">
-            <img src="src/SVG/icon-yt.svg" alt="">
+        <div class="flex flex-row justify-around items-center mt-12">
+            <div class="w-20"><img src="src/SVG/icon-vk.svg" alt=""></div>
+            <div class="w-20"><img src="src/SVG/icon-tg.svg" alt=""></div>
+            <div class="w-20"><img src="src/SVG/icon-inst.svg" alt=""></div>
+            <div class="w-20"><img src="src/SVG/icon-yt.svg" alt=""></div>
+            
+            
+            
+           
         </div>
 
-        <div class="font_bold text-xl mb-8 mt-10">
+        <div class="font_bold text-sm md:text-xl mb-8 mt-10">
             О нас
         </div>
-        <div class="text-center text-base font_regular">
+        <div class="text-center text-sm md:text-base font_regular">
             <b>StudioKiss</b> – это забота, красота и атмосфера. Арендуйте залы студии для своей фото/видео съёмки или <br>
              мероприятия. Также вы можете воспользоваться услугами наших специалистов – фотографов, <br> визажистов, стилистов. Фотошкола StudioKiss – одна из лучших в городе. Доверяйте себя профессионалам.
         </div>

@@ -1,0 +1,34 @@
+@media  (width <= 768px) {
+
+    html, body {
+        margin: 0;
+    }
+
+
+    .form_fon {
+        background-image: url(../src/Img/зал%20loft/img_4864.jpg);
+        background-size: 100% 100%;
+    }
+    .form_border {
+        width: 80%;
+    }
+    .form_fon input {
+        width: 80%;
+    }
+    .form_fon select {
+        width: 80%;
+    }
+
+
+    .strela_img {
+        bottom: 3%;
+        right: 5%;
+    }
+
+
+    .studio_carousel_width {
+        width:90%;
+    }
+
+
+}
