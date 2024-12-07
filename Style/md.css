@@ -25,9 +25,16 @@
         right: 5%;
     }
 
+    .carousel-caption {
+        background-color: var(--color-pink_white_opacity);
+        border-radius: 15px;
+        padding: 0.2%;
+        margin-bottom: 3%;
+    }
+
 
     .studio_carousel_width {
-        width:90%;
+        width:100%;
     }
 
 
