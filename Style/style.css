@@ -15,6 +15,26 @@ html, body {
     --color-pink_black-hover: #80615F;
 }
 
+
+
+
+::-webkit-scrollbar {
+    width: 18px;
+    background-color: var(--color-pink_white);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: var(--color-pink_black);
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: var(--color-pink_white);
+  }
+
+
+
     /* Подрубаем шрифты  */
 @font-face {
     font-family: "Inter-Black";
@@ -40,6 +60,10 @@ html, body {
     font-family: "Inter-SemiBold";
     src: url(../Fonts/Inter/Inter-SemiBold.otf);
 }
+@font-face {
+    font-family: "PetitFormalScript-Regular";
+    src: url(../Fonts/PetitFormalScript-Regular.ttf);
+}
 
     /* Задаем шрифты чтобы потом по отдельности не писать */
 .font_bold {
@@ -59,6 +83,10 @@ html, body {
 }
 .font_semibold {
     font-family: "Inter-SemiBold";
+}
+.font_petit {
+    font-family: "PetitFormalScript-Regular";
+    color: var(--color-pink_black);
 }
 
 
