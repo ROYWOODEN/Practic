@@ -33,5 +33,49 @@ html, body {
     transition: 1s;
 }
 .nav_btn:hover {
+    background-color: var(--color-pink_black-hover); 
+}
+
+
+.form_fon {
+    background-image: url(../src/Img/foto-rez.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.form_border {
+    border: 1px solid white;
+    padding: 4% 1%;
+    border-radius: 20px;
+    width: 40%;
+}
+.form_fon input {
+    background-color: var(--color-pink_white);
+    border: 3px solid var(--color-pink_black);
+    padding: 3%;
+    border-radius: 21px;
+    width: 70%;
+    margin-bottom: 3%;
+    color: var(--color-pink_black);
+}
+.form_btn {
+    background-color: var(--color-pink_black);
+    color: var(--color-pink_white);
+    padding: 3% 8%;
+    border: none;
+    border-radius: 15px;
+    transition: 1s;
+}
+.form_btn:hover {
     background-color: var(--color-pink_black-hover);
+
+}
+.form_fon select {
+    background-color: var(--color-pink_white);
+    color: var(--color-pink_black);
+    border-radius: 21px;
+    width: 70%;
+    margin-bottom: 3%;
+    padding: 3%;
+    border: 3px solid var(--color-pink_black);
 }
