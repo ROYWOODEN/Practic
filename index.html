@@ -29,7 +29,7 @@
 
         <!-- Шапка сайта  -->
         <nav class="d-flex flex-column">
-            <div class="font-bold flex flex-row justify-between items-center text-sm md:text-base">
+            <div class="flex flex-row justify-between items-center text-sm md:text-base font_bold">
 
                 <div>studiokiss@mail.ru</div>
                 <div class="flex flex-row justify-between items-center gap-x-8">
@@ -49,7 +49,7 @@
 
             <hr class="nav_hr mt-2">
 
-            <div class="flex flex-row justify-around font-black items-center text-sm md:text-xl nav_btn_text">
+            <div class="flex flex-row justify-around font_black items-center text-sm md:text-xl nav_btn_text">
                 <div>
                     <img class="w-32" src="src/Img/logo.png" alt="">
                 </div>
@@ -68,10 +68,10 @@
         <br><br><br><br>
         <div class="form_border">
             
-            <div class="text-center mb-5 font-black text-white text-xl">
+            <div class="text-center mb-5 font_black text-white text-xl">
                 Заполните форму
             </div>
-            <form action="" class="flex flex-column items-center font-black text-xl">
+            <form action="" class="flex flex-column items-center font_black text-xl">
                 <input type="text" placeholder="Введите ФИО">
                 <input type="text" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
                 <input type="email" placeholder="E-mail">
@@ -88,14 +88,53 @@
                 <input type="date" class="">
 
                   <button class="form_btn mt-8">Отправить</button>
-
-
-
-               
             </form>
         </div>
     </section>
+
+    <div class="strela_img">
+        <a href="#"><img src="src/SVG/strela.svg" alt=""></a>
+    </div>
+    <br><br>
+
+    <section>
+
+        <h1 class="font_black text-center md:text-4xl text-xl">
+            Галерея работ
+        </h1>
+        <br><br><br>
+
+        <div class="d-flex flex-row justify-center">
+            <div class="w-full relative">
+                <div class="swiper centered-slide-carousel swiper-container relative ">
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                    <img src="src/Img/Галерея работ/semya-11-1024x683.jpg" alt="">
+                 </div>
+                 <div class="swiper-slide">
+                    <img src="src/Img/Галерея работ/lav-3-1024x683.jpg" alt="">
+                 </div>
+                 <div class="swiper-slide">
+                    <img src="src/Img/Галерея работ/lav-1-1024x682.jpg" alt="">
+                 </div>
+                 <div class="swiper-slide">
+                    <img src="src/Img/Галерея работ/lav-1024x683.jpg" alt="">
+                 </div>
+                 <div class="swiper-slide">
+                    <img src="src/Img/Галерея работ/individualnye-2-1024x683.jpg" alt="">
+                 </div>
+                 <div class="swiper-slide">
+                    <img src="src/Img/Галерея работ/semya-4-1024x683.jpg" alt="">
+                 </div>
+                </div>
+                <div class="swiper-pagination "></div>
+                </div>
+                </div>
+         </div>
+    </section>
        
+
+    <br><br><br><br>
   
   
   
@@ -105,8 +144,8 @@
        <!-- <script src="script/header-hamb.js"></script> -->
 
        <!-- Скрипт для Swiper  -->
-       <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-       <!-- <script src="script/swiper-carousel.js"></script> -->
+       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+       <script src="script/swiper-carousel.js"></script>
        
 </body>
 </html>
