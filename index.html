@@ -242,9 +242,9 @@
                         </p>
                     </div>
                     <div class="px-6 py-4">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#individual</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#family</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#wedding</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#individual</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#family</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mb-2">#wedding</span>
                     </div>
                 </div>
             </div>
@@ -259,9 +259,9 @@
                         </p>
                     </div>
                     <div class="px-6 py-4">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#individual</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#family</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#wedding</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#individual</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#family</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mb-2">#wedding</span>
                     </div>
                 </div>
             </div>
@@ -276,9 +276,9 @@
                         </p>
                     </div>
                     <div class="px-6 py-4">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#individual</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#family</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#wedding</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#individual</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#family</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mb-2">#wedding</span>
                     </div>
                 </div>
             </div>
@@ -363,18 +363,6 @@
             </button>
           </div>
 
-          <script>
-            function toggleText(button) {
-  const hiddenText = button.nextElementSibling; // Найти скрытый текст рядом с кнопкой
-  if (hiddenText.style.display === "none") {
-    hiddenText.style.display = "block"; // Показать текст
-    button.textContent = "Скрыть"; // Изменить текст кнопки
-  } else {
-    hiddenText.style.display = "none"; // Скрыть текст
-    button.textContent = "Подробнее"; // Вернуть текст кнопки
-  }
-}
-          </script>
 
         
     </section>
@@ -400,8 +388,8 @@
             +7 (423) 275-8-572
         </div>
 
-        <div class="font_medium text-sm md:text-xl mb-6">
-            г.Владивосток, ул. Калинина 205, ТЦ "Зеленый Остров" 2-ой корпус, 3 этаж
+        <div class="text-center font_medium text-sm md:text-xl mb-6">
+            г.Владивосток, ул. Калинина 205, ТЦ "Зеленый Остров"<br> 2-ой корпус, 3 этаж
         </div>
         <div class="font_bold text-sm md:text-xl">
             Ежедневно: 9:00 - 19:00
@@ -448,35 +436,10 @@
        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
        <script src="script/swiper-carousel.js"></script>
 
-       <script>
-        const hamb = document.querySelector("#hamb"); // Иконка бургер-меню
-const popup = document.querySelector("#popup"); // Контейнер для меню
-const body = document.body; // Тело страницы
+       <!-- Скрипт для бургер меню  -->
+       <script src="script/burger-menu.js"></script>
 
-// Слушаем событие клика на бургер-меню
-hamb.addEventListener("click", () => {
-  popup.classList.toggle("open"); // Открытие/закрытие меню
-  hamb.classList.toggle("active"); // Анимация бургер-иконки
-
-  // Управляем скроллингом
-  if (popup.classList.contains("open")) {
-    body.classList.add("noscroll"); // Отключить скроллинг
-  } else {
-    body.classList.remove("noscroll"); // Включить скроллинг
-  }
-});
-
-// Закрытие меню при клике на ссылку
-popup.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    popup.classList.remove("open"); // Закрыть меню
-    hamb.classList.remove("active"); // Убрать анимацию
-    body.classList.remove("noscroll"); // Включить скроллинг
-  });
-});
-
-
-       </script>
+       <script src="script/carousel-text.js"></script>
        
 </body>
 </html>
