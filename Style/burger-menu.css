@@ -4,6 +4,7 @@
     align-items: center;
     margin-right: 10px; /* Отступ от правого края экрана */
     /* margin-top: 10px; */
+    z-index: 101;
   }
   
   .hamb__field {
