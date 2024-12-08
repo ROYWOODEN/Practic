@@ -1,0 +1,104 @@
+/* Бургер-иконка */
+.hamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Отступ от правого края экрана */
+    /* margin-top: 10px; */
+  }
+  
+  .hamb__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    /* margin-top: 5%; */
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-pink_black2);
+    transition: 0.3s;
+  }
+  
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /* Мобильное меню */
+  .popup {
+    position: fixed;
+    top: 50px; /* Отступ сверху (учитываем шапку) */
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 75px); /* Полная высота минус шапка */
+    background-color: var(--color-pink_black);
+    z-index: 1000;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  #popup {
+    height: 100vh; /* Заставляет элемент занимать 100% высоты окна браузера */
+  }
+  
+  
+  .popup.open {
+    left: 0;
+  }
+  
+  .popup ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .popup ul.menu li {
+    width: 100%;
+    /* margin-bottom: 5%; */
+  }
+  
+  /* .popup ul.menu li a {
+    text-decoration: none;
+    color: var(--color-pink_white);
+    display: block;
+    padding: 10px 0;
+  } */
+  
+  /* .popup ul.menu li a:hover {
+    background-color: var(--color-pink_black-hover);
+    color: #fff;
+  } */
+
+  .nav_btn_2 {
+    background-color: var(--color-pink_white);
+    padding: 2%;
+    border-radius: 15px;
+    color: var(--color-pink_black);
+}
+
+  body.noscroll {
+    overflow: hidden; /* Отключает скроллинг страницы */
+  }
+  
+  
+  /* Скрыть бургер на больших экранах */
+  /* @media (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  } */

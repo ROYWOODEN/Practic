@@ -18,6 +18,7 @@
 
         <link rel="stylesheet" href="Style/style.css">
         <link rel="stylesheet" href="Style/md.css">
+        <link rel="stylesheet" href="Style/burger-menu.css">
 
         <!-- Иконка для сайта  -->
         <link rel="icon" href="src/SVG/icon.svg">
@@ -29,8 +30,86 @@
 
     <header>
 
+      <nav class="flex flex-col relative">
+        <!-- Верхняя строка навигации -->
+        <div class="flex flex-row justify-between items-center text-sm lg:text-base font_bold ms-2 lg:ms-0">
+          <div>studiokiss@mail.ru</div>
+          <div class="text-2xl font_petit font-bold">StudioKiss</div>
+          <!-- Обычное меню: Показываем только на экранах больше lg -->
+          <div class="hidden lg:flex flex-row justify-between items-center gap-x-8">
+            <div class="flex flex-row items-center">
+              <img src="src/SVG/icon-GPS.svg" alt="">г.Владивосток, ул. Калинина 205, 3 этаж
+            </div>
+            <div class="flex flex-row items-center">
+              <img src="src/SVG/icon-tel.svg" alt="">+7 (423) 275-8-572
+            </div>
+            <div>
+              <img src="src/SVG/icon-vk-tg.svg" alt="">
+            </div>
+          </div>
+          <!-- Бургер-меню: Показываем только на lg и меньше -->
+          <div class="hamburger lg:hidden mt-2 items-center">
+            <div id="hamb" class="hamb__field">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="nav_hr mt-2">
+      
+        <!-- Основное меню -->
+        <div class="hidden lg:flex flex-row justify-around font_black items-center text-sm lg:text-xl nav_btn_text">
+          <div><img class="w-32" src="src/Img/logo.png" alt=""></div>
+          <div><p><a href="#gallery">Галерея работ</a></p></div>
+          <div><p><a href="#services">Наши услуги</a></p></div>
+          <div><p><a href="#studio">Интерьерные студии</a></p></div>
+          <button class="nav_btn"><a href="#order"></a>Заказать мероприятие</button>
+        </div>
+      
+        <!-- Мобильное меню -->
+        <div id="popup" class="popup font_black text-xl text-center">
+          <ul class="menu">
+            <li class="flex flex-col items-center mb-4">
+              <img class="w-25" src="src/SVG/icon-vk-tg.svg" alt="">
+            </li>
+            <li class="flex flex-col items-center mb-4">
+              <div class="flex flex-row items-center">
+                <img src="src/SVG/icon-tel.svg" alt="">+7 (423) 275-8-572
+              </div>
+            </li>
+            <li class="flex flex-col items-center mb-10">
+              <div class="flex flex-row items-center">
+                <img src="src/SVG/icon-GPS.svg" alt="">г.Владивосток,<br> ул. Калинина 205, 3 этаж
+              </div>
+            </li>
+            <li class="mb-4"><a href="#gallery">Галерея работ</a></li>
+            <li class="mb-4"><a href="#services">Наши услуги</a></li>
+            <li class="mb-4"><a href="#studio">Интерьерные студии</a></li>
+          </ul>
+          <button class="nav_btn_2">
+            <a href="#order">Заказать мероприятие</a>
+          </button>
+        </div>
+      </nav>
+      
+  
+
+        <!-- <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            
+          </div>
+          <div class="popup" id="popup"></div> -->
+
+          
+
         <!-- Шапка сайта  -->
-        <nav class="flex flex-col">
+        <!-- <nav class="flex flex-col">
             <div class="flex flex-row justify-between items-center text-sm md:text-base font_bold">
 
                 <div>studiokiss@mail.ru</div>
@@ -64,7 +143,7 @@
                 <button class="nav_btn"><a href="#order"></a>Заказать мероприятие</button>
             </div>
 
-        </nav>
+        </nav> -->
         <br>
     </header>
 
@@ -368,6 +447,36 @@
        <!-- Скрипт для Swiper  -->
        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
        <script src="script/swiper-carousel.js"></script>
+
+       <script>
+        const hamb = document.querySelector("#hamb"); // Иконка бургер-меню
+const popup = document.querySelector("#popup"); // Контейнер для меню
+const body = document.body; // Тело страницы
+
+// Слушаем событие клика на бургер-меню
+hamb.addEventListener("click", () => {
+  popup.classList.toggle("open"); // Открытие/закрытие меню
+  hamb.classList.toggle("active"); // Анимация бургер-иконки
+
+  // Управляем скроллингом
+  if (popup.classList.contains("open")) {
+    body.classList.add("noscroll"); // Отключить скроллинг
+  } else {
+    body.classList.remove("noscroll"); // Включить скроллинг
+  }
+});
+
+// Закрытие меню при клике на ссылку
+popup.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    popup.classList.remove("open"); // Закрыть меню
+    hamb.classList.remove("active"); // Убрать анимацию
+    body.classList.remove("noscroll"); // Включить скроллинг
+  });
+});
+
+
+       </script>
        
 </body>
 </html>
