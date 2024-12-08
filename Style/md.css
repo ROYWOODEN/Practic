@@ -36,6 +36,12 @@
     .studio_carousel_width {
         width:100%;
     }
+    .studio_btn {
+        background-color: var(--color-pink_white);
+        padding: 2%;
+        border-radius: 10px;
+        color: var(--color-pink_black);
+    }
 
 
 
