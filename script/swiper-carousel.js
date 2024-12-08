@@ -1,16 +1,16 @@
-var swiper = new Swiper(".centered-slide-carousel", {
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".centered-slide-carousel", {
     centeredSlides: true,
-    paginationClickable: true,
     loop: true,
+    slidesPerView: 1, // По умолчанию отображается 1 слайд
     spaceBetween: 30,
-    slideToClickedSlide: true,
     pagination: {
       el: ".centered-slide-carousel .swiper-pagination",
       clickable: true,
     },
     autoplay: {
-      delay: 3000, // Задержка в миллисекундах (3 секунды)
-      disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
+      delay: 3000,
+      disableOnInteraction: false,
     },
     breakpoints: {
       1920: {
@@ -27,3 +27,9 @@ var swiper = new Swiper(".centered-slide-carousel", {
       },
     },
   });
+
+  // Фикс багов при цикличности (loop)
+  swiper.on("loopFix", function () {
+    swiper.update(); // Принудительное обновление Swiper
+  });
+});
