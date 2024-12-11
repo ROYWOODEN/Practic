@@ -144,7 +144,6 @@ html, body {
 }
 .form_btn:hover {
     background-color: var(--color-pink_black-hover);
-
 }
 .form_fon select {
     background-color: var(--color-pink_white);
@@ -216,6 +215,32 @@ html, body {
     width:80%;
 }
 
+.studio_btn {
+    background-color: var(--color-pink_white);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: var(--color-pink_black);
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  /* Стили скрытого текста с прокруткой */
+  .hidden-text {
+    display: none;
+    overflow-y: auto; /* Вертикальная прокрутка */
+    max-height: 150px; /* Ограничение высоты текста */
+    padding: 10px;
+    border: 1px solid var(--color-pink_white);
+    border-radius: 5px;
+    background-color: var(--color-pink_white);
+  }
+
+  /* Адаптация для маленьких экранов */
+  @media (max-width: 576px) {
+    .hidden-text {
+      max-height: 100px; /* Более компактная высота */
+    }
+  }
 
 .footer_fon {
     /* background-color: var(--color-pink_black); */
