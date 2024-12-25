@@ -254,6 +254,14 @@ html, body {
     /* background-color: var(--color-pink_black); */
     color: var(--color-pink_white);
 }
+.footer_svg {
+    fill: var(--color-pink_white);
+}
+.footer_svg:hover {
+    fill: #FFACA6;
+    transition: 1s;
+    cursor: pointer;
+}
 
 
 
